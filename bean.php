@@ -6,7 +6,7 @@ require('functions.php');
 try {
 //avataan kanta
 $dbcon = createDbConnection();
-//muodostetaan sql-lause, haetaan otsikot, vuosi, kesto, arvostelut. Etsitään elokuvat, joissa roolinimenä Mr. Bean 
+//muodostetaan sql-lause, haetaan otsikot, vuosi, kesto, arvostelut. Etsitään julkaisut, joissa roolinimenä Mr. Bean 
 //järjestetään laskevaan järjestykseen arvosanan mukaan
 selectAsJson($dbcon, 'SELECT titles.title_id, primary_title, start_year, average_rating 
     FROM titles, had_role, title_ratings
